@@ -3,8 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>LocalStorage Student Database</title>
-    
+    <title>Attendance System</title>
     <style>
         table {
             width: 100%;
@@ -24,27 +23,27 @@
     </style>
 </head>
 <body>
+    <a href="index.html">Home</a>
     <div class="container">
-        <input type="text" placeholder="Name" id="name">
-        <input type="text" placeholder="Roll No." id="rollno">
-        <input type="text" placeholder="Age" id="age">
-        <button id="btn">Submit</button>
+        <h1>Student Attendance</h1>
+        <input type="text" placeholder="Enter Roll No." id="rollno">
+        <button id="markAttendanceBtn">Mark Attendance</button>
 
-        <h2>Student Database</h2>
+        <h2>Attendance Record</h2>
         <table>
             <thead>
                 <tr>
-                    <th>Name</th>
                     <th>Roll No.</th>
+                    <th>Name</th>
                     <th>Age</th>
+                    <th>Status</th>
                 </tr>
             </thead>
-            <tbody id="tableBody">
-                <!-- Data will be dynamically inserted here -->
+            <tbody id="attendanceTable">
+                <!-- Attendance records will appear here -->
             </tbody>
         </table>
     </div>
-    <a href="attendance.html">Attendance</a>
-    <script src="main.js"></script>
+    <script src="attendance.js"></script>
 </body>
 </html>
